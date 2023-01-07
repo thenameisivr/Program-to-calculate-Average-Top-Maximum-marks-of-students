@@ -1,0 +1,30 @@
+avg= lambda seq: sum(seq)/len(seq)
+top= lambda seq: max(seq)
+total= lambda seq: sum(seq)
+
+LPU=[
+    {"name":"VIR","Grades":(100,100,100,100,99)},
+    {"name":"Madhur","Grades":(100,100,100,100,99)},
+    {"name": "Ankush", "Grades": (10, 10, 100, 100, 99)},
+    {"name": "Subham", "Grades": (00, 100, 0, 100, 99)}
+
+]
+for students in LPU:
+    name=students["name"]
+    grades=students["Grades"]
+
+    print(f"Student name is {name} and marks obtained are {grades}")
+    abc=input("Enter  'average'  ,  'top'  ,  'total' :  \nYour Answer here: ")
+
+    if abc=='average':
+        print(f" Average Marks of the student are : {avg(grades)}")
+
+    elif abc=='top':
+        print(f" Top marks of the Student are : {top(grades)}")
+
+    elif abc=='total':
+        print(f" Total  marks of the Student are : {total(grades)}")
+
+    else:
+        print("Thankyou for using the program")
+
